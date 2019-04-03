@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Short site summary"> 
+        <meta name="keywords" content="keywords, that, describe, your site">
+
+        <title>NASA Astronomical Virtual Observatories</title>
+<!--#include virtual="summary_includes/includes/header_info.html"-->
+    </head>
+
+    <body>
+<!--#include virtual="summary_includes/includes/wrapper_top.html"-->
+                            <h2>Python Notebooks</h2>
+                            <div class="full-width-content-item">
+
+<p><font color=red>This page is out of date and provided for reference
+			      only:  please see the <a
+			      href="python.html">updated site with
+			      newer and easier-to-use
+			      utilities.</a></font></p>
+			      
+<p>We supply a number of Python notebooks, giving concrete examples on
+how to query our archives with specific use pages.</p>
+
+<p><b>NASA-NAVO Services</b></p>
+
+<ul> 
+
+<li><p>If you need to combine data from multiple archives, this
+example uses python to put together and analyze a multiwavelength data
+set. This example uses a sample of interacting galaxies and assembles
+a multiwavelength data set for it. This can be generalized to a much
+larger data set.  (<a target="_blank"
+href="https://github.com/NASA-NAVO/aas_workshop_2018/blob/master/workshop.ipynb">View
+or download from GitHub</a>)</li> </ul>
+
+<hr width="50%">
+
+<p><b>HEASARC</b></p>
+
+<ul>
+
+<li><p>If you would like to go through a specific science case, this
+notebook goes through a number of examples for accessing HEASARC data,
+including catalogs, images and spectra, using various VO
+protocols. This notebook presents the broad summary of the available
+protocols. More details are available in separate notebooks using
+various VO protocols.  (<a target="_blank"
+href="https://github.com/NASA-NAVO/aas_workshop_2018/blob/master/heasarc/heasarc_queries_Overview.ipynb">View
+or download from GitHub</a>)</p></li>
+
+<li><p>If you need to access VO tables from the HEASARC archive, this
+notebook shows how to list, fetch and look at VO tables and also how
+to create your own VO Table, which can be used to cross-correlate with
+other VO Tables.  (<a target="_blank"
+href="https://github.com/NASA-NAVO/aas_workshop_2018/blob/master/heasarc/heasarc_VO_Tables.ipynb">View
+or download from GitHub</a>)</p></li>
+
+<li><p>If you need to perform a simple cone search of HEASARC
+catalogs, this example goes through finding out what catalogs are
+available for cone searches or search a given table with a given
+position and radius, getting a VOTable XML result.  (<a
+target="_blank"
+href="https://github.com/NASA-NAVO/aas_workshop_2018/blob/master/heasarc/heasarc_Cone_Search.ipynb">View
+or download from GitHub</a>)</p></li>
+
+<li><p>This example shows how to search for and retrieve images from
+the HEASARC's holdings.  (<a target="_blank"
+href="https://github.com/NASA-NAVO/aas_workshop_2018/blob/master/heasarc/heasarc_Image_Access.ipynb">View
+or download from GitHub</a>)</p></li>
+
+<li><p>This example shows how to search for and retrieve spectra from
+the HEASARC's holdings.  (<a target="_blank"
+href="https://github.com/NASA-NAVO/aas_workshop_2018/blob/master/heasarc/heasarc_Spectral_Access.ipynb">View
+or download from GitHub</a>)</p></li>
+
+<li><p>If you need to access HEASARC tables through the TAP with ADQL,
+this example expands on using Table Access Protocol (TAP) and the
+Astronomical Data Query Language (ADQL) that it uses.  (<a
+target="_blank"
+href="https://github.com/NASA-NAVO/aas_workshop_2018/blob/master/heasarc/heasarc_TAP_queries.ipynb">View
+or download from GitHub</a>)</p></li>
+
+<!--<li> -   (<a target="_blank" href="">View or download from GitHub</a>)</li>-->
+
+</ul>
+<hr width="50%">
+
+<p><b>IRSA</b></p>
+
+<ul>
+
+<li><p>If you need to access data from infrared or submillimeter
+missions or data from related projects, the NASA/IPAC Infrared Science
+Archive (IRSA) holds these products. These include data from pointed
+observatories such as Spitzer and Herschel, as well as large-area and
+all-sky surveys such as 2MASS, WISE, IRAS, Planck, and AKARI. In
+total, IRSA provides access to more than 20 billion astronomical
+measurements, including all-sky coverage in 24 bands. This example
+shows how to perform a catalog search of those products. (<a
+target="_blank"
+href="https://github.com/NASA-NAVO/aas_workshop_2018/blob/master/irsa/IRSA_Catalog_Search.ipynb">View
+or download from GitHub</a>)</li>
+
+<li><p>IRSA Image Search - (<a
+target="_blank"
+href="https://github.com/NASA-NAVO/aas_workshop_2018/blob/master/irsa/IRSA_Image_Search.ipynb">View
+or download from GitHub</a>)</li> </ul>
+
+<hr width="50%">
+
+<!--<li> -   (<a target="_blank" href="">View or download from GitHub</a>)</li>-->
+
+<p><b>MAST</b></p>
+
+<ul>
+
+<li><p>MAST CAOM Tap Example - This notebook shows how to use the MAST
+CAOM Tap service.  (<a target="_blank"
+href="https://github.com/NASA-NAVO/aas_workshop_2018/blob/master/mast/CaomTap.ipynb">View
+or download from GitHub</a>)</li>
+
+<li><p>Notebook for accessing MAST SIA services - This notebook shows
+how to use Virtual Observatory (VO) services to find and retrieve
+images from the MAST archive. Since these queries use VO protocols,
+they are not specific to MAST, and can be used to find and retrieve
+images from other VO data providers.  (<a target="_blank"
+href="https://github.com/NASA-NAVO/aas_workshop_2018/blob/master/mast/MAST_Image_Access.ipynb">View
+or download from GitHub</a>)</li>
+
+<li><p>New notebook with more details about searching the registry -
+NAVO has an instance of an IVOA Registry known as the NAVO
+Directory. This directory can be searched for resources that may be
+applicable to a particular scientific problem. The registry can be
+searched via a web page or programmatically.  (<a target="_blank"
+href="https://github.com/NASA-NAVO/aas_workshop_2018/blob/master/mast/Registry_Search.ipynb">View
+or download from GitHub</a>)</li>
+
+<li><p>Notebook for accessing MAST SIA services - (<a target="_blank"
+href="https://github.com/NASA-NAVO/aas_workshop_2018/blob/master/mast/mastutils.py">View
+or download from GitHub</a>)</li>
+
+</ul>
+
+<!--
+<hr width="50%">
+
+<p><b>NED</b></p>
+
+<ul>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+</ul>
+-->
+
+
+				<p></p>
+                            </div><!--class="full-width-content-item">-->
+<!--#include virtual="summary_includes/includes/wrapper_bottom.html"-->
+    </body>
+</html>
+

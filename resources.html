@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>NASA Astronomical Virtual Observatories</title>
+
+        <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+
+<!--#include virtual="summary_includes/includes/header_info.html"-->
+
+    </head>
+
+    <body>
+<!--#include virtual="summary_includes/includes/wrapper_top_oneColumn.html"-->
+                            <h2>NASA Astronomical Virtual Observatories</h2>
+                            <div class="full-width-content-item"> 
+ 
+<!--#include virtual="data_info.inc"-->
+
+<p>This table gives the available resources for most missions.
+<i><b>The initial list shows only the primary missions.  This list can
+be expanded to see all the missions.</b></i> The first column gives
+the name of the mission/project.  The second column gives to spectral
+regime or regimes associated with the mission data.  The primary
+archive indicates the NASA archive primarily responsible for the
+mission.  In a few cases there are multiple primary archives when
+different archives have primary responsibility for different aspects
+of the mission.</p>
+
+<p>The next three columns describe the table data products that are
+available in three categories: <i>Obs</i> indicates an observation
+table describing observations taken by the instrument or mission,
+<i>Obj</i> indicates that there is a table of the objects seen by the
+mission.  This is restricted to tables that encompass all or a
+significant fraction of the mission.  The <i>Science</i> column
+indicates that tables associated with specific papers or science
+results for the mission are available.  This might include detailed
+analysis of objects seen in specific observations, particular classes
+of objects, correlations with other instruments or other high level
+science tables.  For some missions, e.g., ROSAT, Chandra and XMM there
+are dozens of these tables available.  </p>
+
+<p>The next three columns indicate the existence of image services
+(using the SIA protocol) at the institutions.  Three kinds of image
+services are distinguished.  <i>Obs</i> services return images
+corresponding to complete observations.  <i>Obj</i> services return
+images associated with specific objects or science objectives.
+<i>Cutout</i> services provide more or less arbitrary cutouts of the
+observational data at a user specified location and size.  In many
+cases these return pixel subsets of what would be seen in a full
+observation cutout, but in others the service may automatically mosaic
+and re-sample the base data.</p>
+
+<p>The final column indicates if there are SSA services associated
+with the project/mission/instrument.</p>
+
+<div id="expandtableTop"> 
+<p>This shows <b>Primary Missions</b> only. <a
+        href="" class="ajax-append">Expand</a> to see all missions.</p> </div>
+        <div id="collapsetableTop"> <p><a href="">Collapse</a> to see <b>Primary
+        Missions</b> only.</p>
+</div>
+
+<table width="100%" id="resourceTable" class="tablesorter">
+<thead>
+<tr>
+<th rowspan="2">Mission</th>
+<th rowspan="2">Regime</th>
+<th rowspan="2">Prime</th>
+<th rowspan="2">NASA</th>
+<th colspan="3" align="center">Tables</th>
+<th colspan="3" align="center">Images</th>
+<th align="center">Spectra</th>
+</tr>
+<tr>
+<th>Obs</th>
+<th>Obj</th>
+<th>Science</th>
+<th>Obs</th>
+<th>Obj</th>
+<th>Cutout</th>
+<th>Obj</th>
+</tr>
+</thead>
+
+
+<tbody>
+<!--
+<tr>
+<td></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+</tr>
+
+-->
+
+<tr>
+<td><a href="" data-reveal-id="2MASS" data-animation="none">2MASS</a></td>
+<td align="center" width="8%">IR</td>
+<td align="center" width="8%">I</td>
+<td align="center" width="8%">P</td>
+
+<td align="center" width="8%"><a href="" data-reveal-id="2MASS_TObs" data-animation="none">I</a></td>
+
+<td align="center" width="8%"><a href="" data-reveal-id="2MASS_TObj" data-animation="none">I</a></td>
+<td align="center" width="8%"></td>
+
+<td align="center" width="8%"><a href="" data-reveal-id="2MASS_IObs" data-animation="none">I</a></td>
+<td align="center" width="8%"></td>
+
+<td align="center" width="8%"><a href="" data-reveal-id="2MASS_IC" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="ASCA" data-animation="none">ASCA</a></td>
+<td align="center" width="8%">X-ray</td>
+<td align="center" width="8%">H</td>
+<td align="center" width="8%">J</td>
+<td align="center" width="8%"><a href="" data-reveal-id="ASCA_TObs" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="ASCA_TObj" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="ASCA_TSci" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="ASCA_IObs" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="ASCA_IObj" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="ADS" data-animation="none">Astronomy Literature</a></td>
+<td align="center" width="8%">All</td>
+<td align="center" width="8%">A</td>
+<td align="center" width="8%">A</td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="ADS_TSci" data-animation="none">A</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="Chandra" data-animation="none">Chandra</a></td>
+<td align="center" width="8%">X-ray</td>
+<td align="center" width="8%">C</td>
+<td align="center" width="8%">P</td>
+<td align="center" width="8%"><a href="" data-reveal-id="Chandra_TObs" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="Chandra_TObj" data-animation="none">C</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="Chandra_TSci" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="Chandra_IObs" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="Chandra_IObj" data-animation="none">C</a></td>
+<td align="center" width="8%"> </td>
+<td align="center" width="8%"><a href="" data-reveal-id="Chandra_S" data-animation="none">C</a></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="DSS" data-animation="none">DSS</a></td>
+<td align="center" width="8%">Optical/IR</td>
+<td align="center" width="8%">M</td>
+<td align="center" width="8%">A</td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="DSS_IC" data-animation="none">I,H</a></td>
+<td align="center" width="8%"></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="NED" data-animation="none">Extragalactic Sources</a></td>
+<td align="center" width="8%">All</td>
+<td align="center" width="8%">N</td>
+<td align="center" width="8%">A</td>
+<td align="center" width="8%"><a href="" data-reveal-id="NED_T" data-animation="none">N</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="NED_T" data-animation="none">N</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="NED_T" data-animation="none">N</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="NED_I" data-animation="none">N</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="NED_I" data-animation="none">N</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="NED_S" data-animation="none">N</a></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="Fermi" data-animation="none">Fermi</a></td>
+<td align="center" width="8%">&gamma;-ray</td>
+<td align="center" width="8%">H</td>
+<td align="center" width="8%">P</td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="Fermi_TObj" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="Fermi_IC" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="FUSE" data-animation="none">FUSE</a></td>
+<td align="center" width="8%">UV</td>
+<td align="center" width="8%">M</td>
+<td align="center" width="8%">P</td>
+<td align="center" width="8%"><a href="" data-reveal-id="FUSE_TObs" data-animation="none">M,H</a></td>
+<td align="center" width="8%"> </td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="FUSE_S" data-animation="none">M</a></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="HST" data-animation="none">HST</a></td>
+<td align="center" width="8%">IR/Optical/UV</td>
+<td align="center" width="8%">M</td>
+<td align="center" width="8%">P</td>
+<td align="center" width="8%"><a href="" data-reveal-id="HST_TObs" data-animation="none">M,H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="HST_TObj" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="HST_IObs" data-animation="none">M</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="HST_S" data-animation="none">M</a></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="INTEGRAL" data-animation="none">INTEGRAL</a></td>
+<td align="center" width="8%">&gamma;-ray</td>
+<td align="center" width="8%">H</td>
+<td align="center" width="8%">J</td>
+<td align="center" width="8%"><a href="" data-reveal-id="INTEGRAL_TObs" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="INTEGRAL_TObj" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="NuSTAR" data-animation="none">NuSTAR</a></td>
+<td align="center" width="8%">X-ray</td>
+<td align="center" width="8%">H</td>
+<td align="center" width="8%">P</td>
+<td align="center" width="8%"><a href="" data-reveal-id="NuSTAR_TObs" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="NuSTAR_IObs" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="Planck" data-animation="none">Planck</a></td>
+<td align="center" width="8%">mm/IR</td>
+<td align="center" width="8%">I</td>
+<td align="center" width="8%">J</td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="Planck_TObj" data-animation="none">I,H</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="Planck_IC" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="ROSAT" data-animation="none">ROSAT</a></td>
+<td align="center" width="8%">X-ray, EUV</td>
+<td align="center" width="8%">H</td>
+<td align="center" width="8%">J</td>
+<td align="center" width="8%"><a href="" data-reveal-id="ROSAT_TObs" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="ROSAT_TObj" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="ROSAT_TSci" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="ROSAT_IObs" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="ROSAT_IObj" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="ROSAT_IC" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="RXTE" data-animation="none">RXTE</a></td>
+<td align="center" width="8%">X-ray</td>
+<td align="center" width="8%">H</td>
+<td align="center" width="8%">P</td>
+<td align="center" width="8%"><a href="" data-reveal-id="RXTE_TObs" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="RXTE_TSci" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="Spitzer" data-animation="none">Spitzer</a></td>
+<td align="center" width="8%">IR</td>
+<td align="center" width="8%">I</td>
+<td align="center" width="8%">P</td>
+<td align="center" width="8%"><a href="" data-reveal-id="Spitzer_TObs" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="Suzaku" data-animation="none">Suzaku</a></td>
+<td align="center" width="8%">X-ray</td>
+<td align="center" width="8%">H</td>
+<td align="center" width="8%">J</td>
+<td align="center" width="8%"><a href="" data-reveal-id="Suzaku_TObs" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="Suzaku_IObs" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="Swift" data-animation="none">Swift</a></td>
+<td align="center" width="8%">X,&gamma;-ray, UV/Opt</td>
+<td align="center" width="8%">H</td>
+<td align="center" width="8%">P</td>
+<td align="center" width="8%"><a href="" data-reveal-id="Swift_TObs" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="Swift_TObj" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="Swift_TSci" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="Swift_IObj" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="Swift_IC" data-animation="none">H(BAT), M(UVOT)</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="Swift_SObj" data-animation="none">H</a></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="WISE" data-animation="none">WISE</a></td>
+<td align="center" width="8%">IR</td>
+<td align="center" width="8%">I</td>
+<td align="center" width="8%">P</td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="WISE_TObj" data-animation="none">I</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="WISE_TSci" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="WISE_IC" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="WMAP" data-animation="none">WMAP</td>
+<td align="center" width="8%">CMB/IR</td>
+<td align="center" width="8%">H/I</td>
+<td align="center" width="8%">P</td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="WMAP_TObj" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="WMAP_TSci" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="WMAP_IC" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+</tr>
+
+<tr>
+<td><a href="" data-reveal-id="XMM" data-animation="none">XMM-Newton</a></td>
+<td align="center" width="8%">X-ray, UV/Opt</td>
+<td align="center" width="8%">H</td>
+<td align="center" width="8%">J</td>
+<td align="center" width="8%"><a href="" data-reveal-id="XMM_TObs" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="XMM_TObj" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="XMM_TSci" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="XMM_IObs" data-animation="none">H</a></td>
+<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="XMM_IC" data-animation="none">M(OM)</a></td>
+<td align="center" width="8%"></td>
+</tr>
+
+</tbody>
+
+</table>
+
+<div id="expandtableBottom"> 
+<p>This shows <b>Primary Missions</b> only. <a
+        href="" class="ajax-append">Expand</a> to see all missions.</p> </div>
+        <div id="collapsetableBottom"> <p><a href="">Collapse</a> to see <b>Primary
+        Missions</b> only.</p>
+</div>
+
+
+<table>
+<tr>
+<td valign="top" width="200">
+<p><b>Center codes:</b><br>
+<table>
+<tr><td>A:</td><td>ADS</td></tr>
+<tr><td>C:</td><td>Chandra Science Center</td></tr>
+<tr><td>H:</td><td>HEASARC</td></tr>
+<tr><td>I:</td><td>IRSA</td></tr>
+<tr><td>M:</td><td>MAST</td></tr>
+<tr><td>N:</td><td>NED</td></tr>
+</table>
+</td>
+
+<td width="60">&nbsp;</td>
+
+<td valign="top">
+<p><b>NASA Involvement:</b><br>
+<table>
+<tr><td>P:</td><td>NASA Prime</td></tr>
+<tr><td>J:</td><td>NASA joint</td></tr>
+<tr><td>A:</td><td>NASA funding for analysis</td></tr>
+</table>
+
+Blank: &nbsp;&nbsp;Limited NASA-funded involvement prior to
+incorporation of the data in one of the archives.  In this case, the
+mission name is shown in italics.</p> 
+</td> 
+</tr> 
+</table>
+
+
+				<p></p>
+                            </div><!--class="full-width-content-item">-->
+<!--#include virtual="summary_includes/includes/wrapper_bottom.html"-->
+    </body>
+</html>
+

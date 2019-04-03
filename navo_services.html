@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Short site summary"> 
+        <meta name="keywords" content="keywords, that, describe, your site">
+
+        <title>NASA Astronomical Virtual Observatories</title>
+<!--#include virtual="summary_includes/includes/header_info.html"-->
+    </head>
+
+    <body>
+<!--#include virtual="summary_includes/includes/wrapper_top.html"-->
+<h2> How Can I Use NAVO Services Directly? </h2>
+                            <div class="full-width-content-item"> 
+
+<p>Most NAVO services are accessed simply by formatting a simple URL and
+parsing the results.  The results are normally a VOTable which is an
+XML file format, which is most conveniently read with an appropriate
+parser but is usually human readable.  The URLs comprise a base URL
+which varies from center to center, and a query payload which varies
+according to the protocol.  The base URLs are given in the table
+below.  In some cases the base URL is characterized by the table or
+mission that is to be queried.  <p> For <strong>cone searches</strong>
+the query payload comprises the three keywords RA, DEC and SR giving
+the ICRS right ascension, ICRS declination and search radius, all in
+decimal degrees.  E.g., to query the xmmmaster HEASARC table using a
+cone search near 3c273 we substitute the table name for XXXXX in the
+base query below and use the RA and Dec of 3c273 and then pick a
+search radius appropriate for our needs.  For XMM a radius of 0.5
+degrees might be sensible.  So we end with the URL:<br> <code>
+   http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=xmmmaster&RA=187.25&DEC=2.05&SR=0.5
+</code>.
+</p>
+
+<p>Another example - Retrieve basic data for Arp 220:<br>
+
+<code>
+   http://ned.ipac.caltech.edu/cgi-bin/objsearch?objname=arp+220&of=xml_main&RA=0&DEC=0&SR=0.5
+</code>.
+</p>
+
+<p> <strong>Simple image </strong> queries have a payload of POS and
+SIZE where POS is a string with the RA and Dec separated by a comma
+and SIZE is the size of the region in which images are requested in
+decimal degrees.  The result of this query is table describing images
+in the region. You can look at and parse the table to find the images
+you want.  One of the columns will be a URL where the image described
+in that row can be downloaded. <br>
+
+<code>
+   http://irsa.ipac.caltech.edu/ibe/sia/twomass/allsky/allsky?POS=20,40&SIZE=0.5
+</code>.
+ 
+</p> 
+
+<p> To do a general SQL-like query in a <strong>table access</strong>
+service you can just add /sync?REQUEST=doQuery&LANG=ADQL&QUERY=xxx
+where xxx is the URI-encoded query string where most non-alphanumeric
+characters are replaced by hex escapes.  You can get a dump of the
+entire database schema (tables and columns available) by appending
+/tables to the base. <br>
+
+<code>
+http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+xmmmaster
+</code>.
+
+</p>
+
+<!--[TBD payload for SSA]--> 
+
+<p> <strong>Simple spectral </strong>
+queries have a payload of POS and SIZE where POS is a string with the
+RA and Dec separated by a comma and SIZE is the size of the region in
+which spectra are requested in decimal degrees. <br>
+
+<code>
+   http://archive.stsci.edu/ssap/search2.php?id=FUSE&pos=151.0,69.0&size=2.0
+</code>.
+ 
+</p>
+<p>
+These interfaces support additional constraints and query modes which
+are discussed in the detailed protocol specifications available at the
+<a href=http://ivoa.net>IVOA website</a> but this can get you started.</p>
+
+<div align="center">
+<table class="datatab">
+    <caption>Table Access VO Services at NAVO Archives</caption>
+<tr>
+<th>Service</th>
+<th width="25">P</th>
+<th width="25">N</th>
+<th width="25">Limits</th>
+<th>Base URL</th>
+</tr>
+
+<tr><td>MAST/STScI</td><td>Cone</td><td align="right">12</td><td>
+</td><td>archive.stsci.edu/XXX/search.php?</td></tr>
+<tr><td>MAST/Kepler</td><td>Cone</td><td align="right">3</td><td>
+</td><td>archive.stsci.edu/kepler/XXX/search.php?</td></tr>
+<tr><td>MAST HST instruments</td><td>Cone</td><td
+align="right">9</td><td>
+</td><td>archive.stsci.edu/hst.php?sci_data_set_name=X*&</td></tr>
+<tr><td>??</td><td>Cone</td><td align="right">2</td><td>
+</td><td>archive.stsci.edu/spec_class/search[2].php?</td></tr>
+<tr><td>MAST GALEX</td><td>Cone</td><td align="right">1</td><td>
+</td><td>galex.stsci.edu/gxWS/ConeSearch/gxConeSearch.aspx?</td></tr>
+<tr><td>HEASARC Tables</td><td>Cone</td><td
+align="right">733</td><td>1,2</td><td>heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=XXXX&</td></tr>
+<tr><td>HEASARC Tables</td><td>TAP</td><td
+align="right">1</td><td>1,2,3</td><td>heasarc.gsfc.nasa.gov/xamin/vo/tap</td></tr>
+<tr><td>IRSA 2MASS</td><td>Cone</td><td align="right">2</td><td>
+</td><td>irsa.ipac.caltech.edu/cgi-bin/Oasis/CatSearch/npa-catsearch?cat=fp_XXX&</td></tr>
+<tr><td>IRSA Tables</td><td>Cone</td><td
+align="right">385</td><td>5,6,9</td><td>irsa.ipac.caltech.edu/SCS?table=XXXX&</td></tr>
+<tr><td>NED</td><td>Cone</td><td align="right">1</td><td>
+</td><td>ned.ipac.caltech.edu/cgi-bin/NEDobjsearch?search_type=Near+Position+Search&of=xml_main&</td></tr>
+<tr><td>ADS</td><td>Cone</td><td
+align="right">1</td><td>7,8</td><td>adsabs.harvard.edu/cgi-bin/abs_connect?data_type=VOTABLE&</td></tr>
+<tr><td>CXC Chandra</td><td>Cone</td><td align="right">2</td><td>
+</td><td>cda.harvard.edu/XXX/coneSearch?</td></tr> <tr><td>CXC
+Chandra</td><td>TAP</td><td align="right">1</td><td>
+</td><td>cda.harvard.edu/cxctap</td></tr> <tr><th>Total</th><th>
+</th><th align="right">1153</th><th> </th><th> </th></tr>
+
+</table>
+</div>
+
+<p>Limits:</p>
+<ol>
+<li>No limits on size of query
+<li>100,000 row limit on results
+<li>Result limit can be overridden
+<li>Services not indexed in registry
+<li>0.75 degree radius limit on query
+<li>50,000 row limit on results
+<li>Echoes input position in results
+<li>200 row limit on results
+<li>25 currently in registry
+</ol>
+
+
+<div align="center">
+<table class="datatab">
+<caption>Data Access VO Services at NAVO Archives</caption>
+<tr>
+<th>Service</th>
+<th width="25">P</th>
+<th width="25">N</th>
+<th width="25">Limits</th>
+<th>Base URL</th>
+</tr>
+<tr><td>MAST GOODS</td><td>SIA</td><td align="right">1</td><td>
+3,4</td><td>http://archive.stsci.edu/eidol.php?</td></tr> <tr><td>MAST
+Image Services</td><td>SIA</td><td align="right">36</td><td>
+3,4</td><td>http://archive.stsci.edu/siap/search.php?id=XXX&</td></tr>
+<tr><td>MAST Spectra Services</td><td>SSA</td><td
+align="right">11</td><td>
+3,4</td><td>http://archive.stsci.edu/ssap/search2.php?id=XXX&</td></tr>
+<tr><td>MAST GALEX Spectra</td><td>SSA</td><td
+align="right">1</td><td>
+3,4</td><td>http://galex.stsci.edu/gxWS/SSAP/gxSSAP.aspx?</td></tr>
+<tr><td>MAST Scrapbook</td><td>SIA</td><td align="right">1</td><td>
+3,4</td><td>http://archive.stsci.edu/siap/search.php?representative=y&</td></tr>
+<tr><td>MAST EPO</td><td>SIA</td><td align="right">2</td><td>
+3,4</td><td>http://archive.stsci.edu/stpr/vo_search.php?</td></tr>
+<tr><td>MAST DSS</td><td>SIA</td><td align="right">4</td><td>
+</td><td>http://chart.stsci.edu/gscvo/DSSX.jsp?</td></tr> <tr><td>MAST
+GALEX</td><td>SIA</td><td align="right">1</td><td>
+</td><td>http://galex.stsci.edu/gxWS/SIAP/gxSIAP.aspx?</td></tr>
+<tr><td>MAST PR</td><td>SIA</td><td align="right">1</td><td>
+</td><td>http://hubblesite.org/cgi-bin/sia/hst_pr_sia.pl?</td></tr>
+<tr><td>MAST Hubble Legacy Archive</td><td>SIA</td><td
+align="right">1</td><td>
+</td><td>http://hla.stsci.edu/cgi-bin/hlaSIAP.cgi?imagetype=best&inst=ACS,ACSGrism,WFC3,WFPC2,NICMOS,NICGRISM,COS,STIS,FOS,GHRS&proprietary=false&</td></tr>
+<tr><td>IRSA Atlas</td><td>SIA</td><td align="right">59</td><td>
+1</td><td>http://irsa.ipac.caltech.edu/cgi-bin/Atlas/nph-atlas?mission=XXX&hdr_location=YYY&SIAP_ACTIVE=1&collection_desc=ZZZ&</td></tr>
+<tr><td>IRSA AllWISE</td><td>SIA</td><td align="right">1</td><td>
+</td><td>http://irsa.ipac.caltech.edu/ibe/sia/wise/allwise/p3am_cdd</td></tr>
+<tr><td>IRSA WISE AllSky</td><td>SIA</td><td align="right">5</td><td>
+</td><td>http://irsa.ipac.caltech.edu/ibe/sia/wise/allsky/XXXX?<br>http://irsa.ipac.caltech.edu/ibe/sia/wise/cryo_3band/XXXX?<br>http://irsa.ipac.caltech.edu/ibe/sia/wise/postcryo/2band_p1bm_frm?</td></tr>
+<tr><td>IRSA WISE Prelim</td><td>SIA</td><td align="right">3</td><td>
+</td><td>http://irsa.ipac.caltech.edu/ibe/sia/wise/prelim/XXX<br>http://irsa.ipac.caltech.edu/ibe/sia/wise/prelim_postcryo/2band_p1bm_frm/xxxx</td></tr>
+<tr><td>IRSA Merged WISE</td><td>SIA</td><td align="right">2</td><td>
+</td><td>http://irsa.ipac.caltech.edu/ibe/sia/wise/merge/XXXX</td></tr>
+<tr><td>IRSA 2MASS</td><td>SIA</td><td align="right">5</td><td>
+</td><td>http//sha.ipac.caltech.edu/ibe/sia/twomass/XXX/XXXX</td></tr>
+<tr><td>IRSA Spitzer</td><td>SIA</td><td align="right">2</td><td>
+</td><td>http://sha.ipac.caltech.edu/applications/Spitzer/VO/VOServices?SERVICE=SIAP&DATASET=ivo://irsa.ipac/spitzer.levelX&;</td></tr>
+<tr><td>HEASARC SkyView General</td><td>SIA</td><td
+align="right">1</td><td>
+1</td><td>http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?</td></tr>
+<tr><td>HEASARC SkyView Survey</td><td>SIA</td><td
+align="right">48</td><td>
+2</td><td>http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=XXX&</td></tr>
+<tr><td>HEASARC SIA</td><td>SIA</td><td align="right"></td><td>
+</td><td>http://heasarc.gsfc.nasa.gov/xamin/vo/sia?table=XXX&</td></tr>
+<tr><td>NED SIA</td><td>SIA</td><td align="right">1</td><td>
+</td><td>http://irsa.ipac.caltech.edu/cgi-bin/Atlas/nph-nedsiap?mission=NED&hdr_location=\NEDDataPath\&SIAP_ACTIVE=1&collection_desc=NASA/IPAC+Extragalactic+Database+Image+Data+Atlas+(NED)&&</td></tr>
+<tr><td>NED SED Service</td><td>SSA</td><td align="right">1</td><td>
+</td><td>http://vo.ned.ipac.caltech.edu/services/querySED?REQUEST=queryData&</td></tr>
+<tr><td>CXC Chandra</td><td>SIA</td><td align="right">1</td><td>
+</td><td>http://cda.harvard.edu/cxcsiap/queryImages?</td></tr>
+<tr><td>CXC Chandra Grating images</td><td>SIA</td><td
+align="right">1</td><td>
+</td><td>http://tgcat.mit.edu/tgSia.php?</td></tr> <tr><th>Total
+Count</th><th> </th><th align="right">162</th><th> </th><th>
+</th></tr>
+</table>
+</div>
+
+<p>Limits:</p>
+<ol>
+<li>Variable limit on query size but typically of order 10 degrees.
+<li>By default results returned depend on ratio of query size and
+intrinsic pixel resolution of survey datasets.  
+<li>Default limit of 2,000 rows returned.
+<li>Default can be overridden.
+</ol>
+
+
+<!-- TBD Examples
+<h2> How can I ... </h2>
+
+Here are a few use cases that illustrate how you might use the VO facilities of NASA's
+archives.
+
+<h3> Find observations of a given position? </h2>
+[TBD]
+<h3> Find simultaneous Spitzer and HST observations? </h2>
+[TBD]
+<h3> Get high resolution IR, Optical and X-ray observations of the same target? </h2>
+[TBD]
+
+-->
+
+
+				<p></p>
+                            </div><!--class="full-width-content-item">-->
+<!--#include virtual="summary_includes/includes/wrapper_bottom.html"-->
+    </body>
+</html>
+

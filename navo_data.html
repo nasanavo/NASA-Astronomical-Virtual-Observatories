@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Short site summary"> 
+        <meta name="keywords" content="keywords, that, describe, your site">
+
+        <title>NASA Astronomical Virtual Observatories</title>
+<!--#include virtual="summary_includes/includes/header_info.html"-->
+    </head>
+
+    <body>
+<!--#include virtual="summary_includes/includes/wrapper_top.html"-->
+<h2> What kinds of data are available? </h2> 
+
+                            <div class="full-width-content-item"> 
+<p>The detailed holdings for each mission stored in the NAVO archives are
+given in our <a href=resources.html>resources table</a>.  Here we
+describe the general categories of data available and how you might
+get to them.  What can you find?</p>
+
+<table border="0" cellpadding="2" cellspacing="2" align="center" width="85%">
+<tr align="center">
+<td><img border="0" src="content-images/major_datasets.jpg" alt="Selected major
+datasets at NASA archives" width="700">
+    
+    <p>This figure illustrates
+        the diversity of a few of the major datasets held by NASA.</p></td>
+</tr>
+</table>
+
+<p>For most missions, the mission data is divided in temporally
+bounded observations.  Details vary from mission to mission, but there
+are typically a time range, exposure, position, target, investigator,
+and instrument configuration associated with the observation.  You can
+get <b>Observation tables</b> which provide a summary of the mission.
+These allow you to see if there is coverage regions and/or times of
+interest with the instrument characteristics you are interested in.
+If you really just looking to seeing if there is spatial coverage then
+the simple cone search protocol is all you need.  Otherwise you may
+wish to do more sophisticated queries using the general table access
+protocol (TAP).  </p>
+
+
+<p> For many missions a major data product is an object catalog (or
+catalogs) derived from systematic analysis of the observations.  The
+astronomer can often use the information in these catalogs without
+needing to reference the observations directly.  Such catalogs are
+typical in imaging missions with reasonably high resolution.
+<b>Object tables</b> may include both observational constraints and
+measured values.  Some missions may have multiple object catalogs
+reflecting difference aspects of the mission.  As with the observation
+catalogs you can query these with either cone or TAP queries depending
+upon whether you need just a spatial match or have more complex search
+criteria.  </p>
+
+<p> All of the archives provide interfaces that allow users to
+retrieve <b>observation images</b>.  These are the actual images
+associated with specific observations but may only be available for
+higher levels of processing.  For some missions, the basic images are
+not taken as discrete observations but are generated in post
+processing.  These interfaces are are currently queryable using
+version 1 of the simple image access protocol which supports
+positional queries. Upgrades to version 2 which will support more
+complex criteria are scheduled for the coming years.  <p>
+
+<p> MAST provides a spectral interface to access <b>spectral data</b>
+for spectrometer based missions and for the HST spectrometer
+instruments. This uses the simple spectral interface document and
+supports queries by position, wavelength and several other criteria.
+Spectral interfaces are planned at IRSA and NED.
+
+<p> MAST, IRSA, and the HEASARC provide many <b>image services for
+specific regions</b> of the sky or associated with specific objects.
+Certain regions of the sky have many specialized services associated
+with them.  They typically do not provide access to the full mission
+dataset but are often more highly processed.
+
+<p>Other images services are direct <b>cut-out capabilities</b> where
+the user can specify a particular region of the interest and will get
+results of that area is in the mission coverage region.  IRSA provides
+a standard cutout service for its imaging missions.  MAST provides
+cutouts for several key datasets.  At the HEASARC, the SkyView service
+provides cutout capabilities for over 100 sky datasets.  NED's imaging
+service provides a combination of cutouts and observations associated
+with specific objects.</p>
+
+<p> Each of the resources described above is indexed in a common
+registry of resources maintained at MAST.  Users can search this
+<b>metadata</b> directly using the <a
+href=http://vao.stsci.edu/directory>Directory</a> service.  This is
+used by many VO-enabled tools but users may sometimes find it useful
+to explore the detailed metadata associated with tables and other
+services.
+
+
+
+				<p></p>
+                            </div><!--class="full-width-content-item">-->
+<!--#include virtual="summary_includes/includes/wrapper_bottom.html"-->
+    </body>
+</html>
+

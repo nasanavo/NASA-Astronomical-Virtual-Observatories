@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Short site summary"> 
+        <meta name="keywords" content="keywords, that, describe, your site">
+
+        <title>NASA Astronomical Virtual Observatories</title>
+<!--#include virtual="summary_includes/includes/header_info.html"-->
+    </head>
+
+    <body>
+<!--#include virtual="summary_includes/includes/wrapper_top.html"-->
+                            <div class="full-width-content-item"> 
+
+<h2>NAVO for Astronomers</h2>
+
+<p>NAVO helps get to the data in the NASA archives.</p>
+
+<h3>Python Notebooks</h3>
+<p>We supply a number of <a href="python.html">Python Notebooks</a>, giving concrete examples on how to query our archives with specific use pages.</p>
+
+<h3>Tools</h3>
+<ul>
+<li><a href="navo_tools.html">NAVO Tools: Using NAVO (and VO) Interfaces</a></li>
+<li><a href="navo_data.html">What kinds of data are available?</a>
+</ul>
+
+<a name="usage"></a><h3>Usage Scenarios</h3> 
+
+<p><b>Resource Discovery</b></p> <p>To
+discover the kinds of services that are available very generally
+scientists may query the VO registry a database of VO enabled
+capabilities.  You can query the registry interactively in a faceted
+interface using the MAST Directory service, or through the Python
+module.</p>
+
+<p><b>Querying catalogs and cross-correlations</b></p>
+
+<p>For example, suppose ou want to look to see which of your set of
+Spitzer observed AGN have already been observed by ST and by which
+instruments.</p>
+
+<p><b>Cone and Table access VO protocols</b></p>
+
+<p>The Cone and Table access VO protocols allow you to make simple
+positional or SQL like queries of NAVO and other VO resources.  A
+number of our Python notebooks give examples of how to get a standard
+Python table from a VO resource, and you can use standard Python table
+tools on these.  The TOPCAT interface is a very powerful standalone
+tool for getting and manipulating VO tools -- including doing
+cross-correlations.  The associated STILTS library lets you do the
+same kinds of things in scripts.  The HEASARC Xamin web interface
+allows retrieval and correlations of VO data.</p>
+
+<p><b>Spectral Analysis</b></p>
+
+<p>The IRIS tool is a standalone capability that can retrieve spectral
+data using the spectral and generate SEDs or fits spectra.  The Python
+notebook illustrates how you can use the VO protocols from within
+Python and feed into Python spectral analysis packages.</p>
+
+
+				<p></p>
+                            </div><!--class="full-width-content-item">-->
+<!--#include virtual="summary_includes/includes/wrapper_bottom.html"-->
+    </body>
+</html>
+

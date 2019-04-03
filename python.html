@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Short site summary"> 
+        <meta name="keywords" content="keywords, that, describe, your site">
+
+        <title>NASA Astronomical Virtual Observatories</title>
+<!--#include virtual="summary_includes/includes/header_info.html"-->
+    </head>
+
+    <body>
+<!--#include virtual="summary_includes/includes/wrapper_top.html"-->
+                            <h2>Python Notebooks</h2>
+                            <div class="full-width-content-item"> 
+<p>We have created a number of Python notebooks showing concrete examples of
+how to query archives using VO protocols.  We use utility functions we have written to make these interfaces simple and familiar to users of <a
+target="_blank" href="https://astroquery.readthedocs.io/en/latest/">astroquery</a>.  We hope to integrate them into astroquery soon, but for now they
+are bundled with our demonstration notebook.  The notebooks are summarized below.  In every case, the idea is to allow you to query any relevant archive with the same interface, rather than having to become familiar with each archive's custom APIs. </p>
+<p>These are available on our GitHub site at <a
+href="https://github.com/NASA-NAVO/notebooks">https://github.com/NASA-NAVO/notebooks</a>.  Clone the whole repository if you wish to run the notebooks yourself, or simply click on the links below to visualize them only.</p>
+			      
+<p><b>Basic NASA-NAVO Services</b></p>
+
+<ul> 
+
+<li><p><b>Images:</b>  The Simple Image Access protocol allows you to download and visualize regions of the sky from a variety of sources.  We demonstrate how to do this with our <a href="https://nbviewer.jupyter.org/github/NASA-NAVO/notebooks/blob/master/Image_Access.ipynb">Image Access notebook</a>.</p></li>
+
+<li><p><b>Catalogs:</b> The Simple Cone Search protocol performs simple searches of catalogs based on a given coordinate and radius.  For more complicated queries, e.g., if you wish to search, match, and cross-correlate catalog data, the VO provides a more powerful Table Access Protocol.  We demonstrate both in our <a href="https://nbviewer.jupyter.org/github/NASA-NAVO/notebooks/blob/master/Catalog_queries.ipynb">Catalog Queries notebook</a> that uses our Cone and TAP query classes.</p></li>
+
+<li><p><b>Spectra:</b> The Simple Spectral Access protocol allows you to download and visualize spectra of a given object from a variety of archives.  We demonstrate how to do this within python in our <a href="https://nbviewer.jupyter.org/github/NASA-NAVO/notebooks/blob/master/Spectral_Access.ipynb">Spectral Access notebook</a>.</p></li>
+
+</ul>
+
+<p>We have also run several workshops at AAS meetings on how to access NAVO services through python, and the notebooks we developed for the first workshop are still available.  These predate our development of the utility classes, which have simplified the process considerably.  But they are still available at <a href="python_2018.html">the old notebook site</a>.  They include examples specific to each archive, while the above notebooks are generic.</p>
+
+
+				<p></p>
+                            </div><!--class="full-width-content-item">-->
+<!--#include virtual="summary_includes/includes/wrapper_bottom.html"-->
+    </body>
+</html>
+

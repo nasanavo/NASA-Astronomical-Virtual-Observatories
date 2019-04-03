@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Short site summary"> 
+        <meta name="keywords" content="keywords, that, describe, your site">
+
+        <title>NASA Astronomical Virtual Observatories</title>
+<!--#include virtual="summary_includes/includes/header_info.html"-->
+    </head>
+
+    <body>
+<!--#include virtual="summary_includes/includes/wrapper_top.html"-->
+                            <h2>Virtual Observatory Glossary</h2>
+                            <div class="full-width-content-item"> 
+
+<p> This page briefly describes some of the VO terminology and
+    technology that
+    underlies the NAVO efforts and which may be referenced in
+    the <a href="navo_intro.html">NAVO summary pages</a> and
+    other NAVO publications.  This glossary is intended to
+    provide a sense of what the terms mean.  NAVO has defined
+    the specific VO standards that will be used in NAVO
+    interfaces in our <a href="standards.html">Agreed VO
+        Standards pages</a>. Our goal here is not to rigorously
+    define these standards but to show how they are used in
+    sufficient detail so that the reader can understand where
+    and why they are used and the relationships among
+    standards are clear.
+<p>
+    The VO is the collaboration of astronomers and astronomy
+    data providers using standard interfaces.  These
+    interfaces allow the discovery and retrieval of
+    information for users who wish to get data, and allow for
+    the publication and dissemination of data by data
+    providers.  These standards have been developed by the
+    International Virtual Observatory Alliance (IVOA), a
+    consortium of national virtual observatory
+    institutions. More information is available at the <a
+        href="http://www.ivoa.net/astronomers/"
+        target="_blank">IVOA</a>.
+
+
+
+<p> We can break down the VO standards into three basic areas: 
+<dl>
+    <dt><b>Registry</b><dd>
+        Registry standards discuss how we populate and query
+        the VO registry.  The VO registry is the mechanism by
+        which users can discover VO services and capabilities.
+    <dt><b>Data</b><dd>Data protocols (or data access
+        protocols as they are referred to in
+        IVOA documentation) are the protocols that allow users to query
+        and retrieve information from data providers.  These tend to
+        be the protocols one most directly associates with the VO.
+    <dt><b>Content</b><dd>Content protocols generally define
+        formats or elements of the
+        files retrieved through the content services.  They
+        may also help define the syntax of the parameters that
+        are used in querying services.  Some content protocols
+        define content that data providers should provide.
+
+</dl>
+<h2> Registry </h2>
+
+<p>There are two kinds of registries - searchable registries, which
+    applications will query, and publishing registries, where resource
+    providers place their information. If you want to know of all the
+    registries that exist, the IVOA maintains a "<a
+        href="http://rofr.ivoa.net/" target="_blank">Registry of
+        Registries</a>".</p>
+
+<p>
+<p>A registry is a list of all the services made available by
+    different data providers. Each entry records some information about
+    the type of service, who provided it, and what kind of data it
+    contains.</p>
+<p>
+<p>There are two methods of publishing your service into a registry.
+    The most common method is to enter service information into a Fully
+    Searchable Registry.  The method, typically used by archive data
+    centers with many services, is to create a Publishing Registry.</p>
+<p>
+<p>A publishing registry is the vehicle for making a resource
+    available to the virtual observatory (VO).  In particular, it can
+    create new descriptions of resources and share them with the rest of
+    the VO through the harvesting process. A data center, which may curate
+    a number of data collections and offer a variety of services to access
+    them, may operate their own publishing registry. A searchable registry
+    can also support the publishing function, which the VAO Registry at
+    STScI does. </p>
+<p>
+
+<p><b>Registry Searching</b> - Services put all sorts of
+    useful information in their registry entries, and some tools
+    make use of this. So for example, you can look specifically
+    for image services, for X-ray data, for data curated by
+    HEASARC, for services that are new this month, and so on. </p>
+
+<h2> Data </h2>
+
+<p>There are five major data protocols implemented at NAVO
+    centers, Simple Cone Search, Table Access Protocol, Simple
+    Image Access Protocol, Simple Spectral Access Protocol, and
+    DataLink.</p>
+
+<p><b>Simple Cone Search</b> - This offers the simplest access
+    to astronomical
+    catalogs.  The input is sky position and radius.  A subset
+    of the catalog within that radius is returned using the <a
+        href="#votable">VOTable</a> format defined below.  This
+    protocol is very easy to implement and query but scales
+    poorly since a separate query is required for every
+    position.
+</p>
+
+<p><b>Table Access Protocol (TAP)</b> - This service offers
+    more flexible access to data tables, along the lines of those
+    used to make queries to other databases.  The input is a query
+    in Astronomical Data Query Language (ADQL), which is basically
+    a standardized version of SQL.  A data table is returned.</p>
+
+<p><b>Simple Image Access Protocol (SIAP)</b> This offers
+    access to pixel data. The input is a position and a size. If
+    it's a "cutout" service, the result will be an image, centered
+    at the requested position, with the requested size. If it is
+    an "atlas" service, which holds a collection of standard sized
+    data frames, then the size is used to look for frames centered
+    within that distance of the requested position, and the whole
+    data frame(s) returned.
+</p>
+
+<p><b>Simple Spectral Access Protocol (SSAP)</b> - This
+    service provides access to spectra. The input is a position
+    and size. Like the "atlas" version of image access, the result
+    will be any spectra whose target positions are within the
+    stated distance of the requested position.</p>
+
+<p>
+
+<p><b>DataLink</b> - This is an intermediate data access service that
+    connects discovered data-sets to the downloadable data files, services
+    that can act on the data files, and links to related resources.</p>
+
+<h2> Content </h2>
+
+<p>The content standards used in the virtual observatory are
+    VOTable, Data Models, ObsTAP, and UCDs.</p>
+
+<p>
+    <a name="votable"></a> <p><b>VOTable</b> - VOTable is designed as a
+    flexible storage and exchange format for tabular data, with particular
+    emphasis on astronomical tables. All VO tools interact with VOTable.
+    VOTable has more flexible descriptive metadata than CSV or FITS
+    tables.</p>
+<p>
+<p><b>Data Models</b> - The IVOA is developing a suite of standard
+    data models.  This way data returned in a search service follows some
+    standard structure and uses standard ways of specifying what kind of
+    quantity is in a column, so that a lot more can be done
+    automatically.</p>
+<p>
+<p><b>ObsTAP</b> - ObsTAP is a Table Access Protocol (TAP) interface
+    to observation data model. ObsTAP and the observation data model
+    describe observations in a broad sense (exactly what comprises an
+    "observation" is not well defined within astronomy and is left up to
+    the data provider to define for their data). ObsTAP also describes
+    archive data products (e.g., actual archive files). In general an
+    "observation" may be composed of multiple individual data
+    products.</p>
+<p>
+<p><b>UCDs</b> - The Unified Content Descriptor (UCD) is a formal
+    vocabulary for astronomical data that is controlled by the
+    International Virtual Observatory Alliance (IVOA). The vocabulary is
+    restricted in order to avoid proliferation of terms and synonyms, and
+    controlled in order to avoid ambiguities as far as possible. It is
+    intended to be flexible, so that it is understandable to both humans
+    and computers. UCDs describe astronomical quantities, and they are
+    built by combining words from the controlled vocabulary. </p>
+
+				<p></p>
+                            </div><!--class="full-width-content-item">-->
+<!--#include virtual="summary_includes/includes/wrapper_bottom.html"-->
+    </body>
+</html>
+

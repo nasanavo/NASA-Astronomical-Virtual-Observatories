@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Short site summary"> 
+        <meta name="keywords" content="keywords, that, describe, your site">
+
+        <title>NASA Astronomical Virtual Observatories</title>
+<!--#include virtual="summary_includes/includes/header_info.html"-->
+    </head>
+
+    <body>
+<!--#include virtual="summary_includes/includes/wrapper_top.html"-->
+                            <h2>NAVO Study of Indexing of Large Tables</h2>
+                            <div class="full-width-content-item"> 
+<p>One of the most complex challenges facing the future of the NASA
+archive data centers is providing rapid access to very large catalogs
+of sources stored in databases. These catalogs nearly always include
+the spatial positions of sources and require intelligent and scalable
+queries to search and discover datasets. The selection of indexing
+method is a crucial part of the design of a database, yet there is not
+collection of benchmarks that record the performance of various
+indexing schemes that will allow database architects make informed
+choices of indexing schemes. Such is the purpose of this study, a
+collaboration between IPAC and STScI.</p>
+
+<p> Based on the results of a
+<a href=NAVO_Indexes_Overview_v1.1.pdf>survey of indexing methods used
+in astronomy by Greene et al. (2015)</a>, we have determined that the
+benchmarking will initially use the Postgres database, and we will
+derive benchmarks that show how query speed varies with the HTM and
+HEALPix indexing methods, and the index bin sizes (arcsecond,
+arcminute, etc.) and with size of search region, and how query times
+compare with database I/O times. The study will examine performance
+for catalogs with uniform sky coverage (2MASS) and locally dense
+coverage (WFPC2).</p>
+
+<p> To date, we have developed and evaluated a
+C-based toolkit for adding indices to a Postgres table, running
+cone-search and caption timing information. First results to be added
+soon.</p>
+
+
+				<p></p>
+                            </div><!--class="full-width-content-item">-->
+<!--#include virtual="summary_includes/includes/wrapper_bottom.html"-->
+    </body>
+</html>
+
