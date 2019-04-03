@@ -1,0 +1,509 @@
+/* CSS Document - Developed by Mor Vimmer */
+@charset "utf-8";
+/* CSS Document */
+
+/******
+BACKGROUND IMAGES
+******/
+
+/* body{background:url(../images/gsfc_tiled_bg_stars_light.jpg) repeat left top;} */
+/* body{background:url(../images/gsfc_tiled_bg_stars.jpg) repeat left top;} */
+.tab-off{background:url(../images/tabs/tab-general-off.png) no-repeat left top;}
+.tab-on{background:url(../images/tabs/tab-general-on.png) no-repeat left top;}
+li.tab1-off{background:url(../images/tabs/tab1-off.png) no-repeat left top;}
+li.tab1-on{background:url(../images/tabs/tab1-on.png) no-repeat left top;}
+#footerRight li{background:url(../images/rsaquo_gray.gif) no-repeat scroll 0 1px transparent;}
+#topMenu{background:url(../images/top-navbar/main_nav_bg.gif) repeat-x scroll center top #252525;}
+
+/******
+BASIC STRUCTURE
+*****/
+
+#page-wrapper{
+	min-height:400px;
+}
+#page{
+	margin:0 auto;
+	width:952px;	
+	padding-top:8px;
+}
+#nasaHeader{
+	width:952px;
+	background-color:#2e2e2e;
+	border-bottom:1px solid #000000;
+//	height:98px;
+	height:65px;
+}
+#tabs{
+	float:right;
+	height:19px;
+}
+#banner{
+	padding-top:7px;	
+}
+#content{
+	float:left;
+	background-color:#fff;
+	margin-top:5px;
+
+}
+#leftnav, #leftsidebar, #leftsideWrapper{
+	width:200px;	
+	float:left;
+}
+#content-wrapper{
+	float:left;	
+	
+}
+.maincontent{
+	background-color:#FFFFFF;
+	float:left;
+	padding: 7px 21px 0 21px;
+
+}
+#rightsidebar{
+	float:left;
+	padding-right:21px;
+	padding-top:7px;
+}
+#leftsidebar, #quickLinks{
+	padding-left:21px;
+	padding-top:7px;
+	}
+#quickLinks{
+	float:left;
+	margin-top:7px;
+	
+}
+/*******
+DIFFERENT WIDTHS for MAIN CONTENT WITH AND WITHOUT RIGHT SIDE AREA
+*******/
+#OneColumn{
+	width:910px;
+}
+#TwoColumn{
+	width:669px;	
+}
+#ThreeColumn{
+	width:448px;
+}
+#leftnavOneColumn{
+	width:710px;
+}
+#leftnavtwoColumn{
+	width:469px;
+}
+#rightsidebar{
+	width:220px;
+}
+
+/*******
+GENERAL STYLES / DETAILED STRUCTURE
+*******/
+
+body{
+	color:#000000;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:62.5%;
+	text-align:center;
+        background-color: #cccccc;
+}
+#page{
+	text-align:left;
+}
+#headerTxtWrapper{
+	left:15px;
+//	padding-top:30px;
+	padding-top:20px;
+	position:relative;
+	float:left;
+}
+#tabs li{
+	height:19px;	
+	width:213px;
+}
+#tabs #tab1{
+	width:190px;
+}
+#footer{
+	background-color:#2E2E2E;
+	border-top:8px solid #0B3D91;
+//	height:98px;
+	height:65px;
+	width:952px;	
+}
+#footer-signature{
+	padding-left:20px;
+	padding-top:19px;
+	float:left;
+}
+.nasafootlinks{
+	float:left;
+	height:84px;
+	margin-left:70px;
+	padding-left:10px;
+	padding-top:14px;
+	width:230px;
+}
+#searchbox{
+	float:right;
+	margin-top:28px;	
+}
+
+/******
+SERACH BOX AREA
+*****/
+#searchbox h3{ display:none;}
+#searchbox  #searchfield {
+background:url("../images/header-searchinputbox.gif") no-repeat scroll 0 50% transparent;
+border:0 solid #00FF00;
+font-size:12px;
+height:19px;
+line-height:19px;
+padding:3px 11px 0 3px;
+width:153px;
+}
+#search{
+	float:right;
+	padding-right:21px;
+}
+#searchbox p{
+	float:right;
+	font-size:12px;
+	margin-top:9px;
+	padding-right:21px;
+	position:relative;
+	color:#fff;
+}
+/******
+TOP MENU
+******/
+#topMenu{
+	width:952px;
+	height:32px;
+}
+#topMenu li{ 
+	text-align:center;
+	float:left;
+	height:32px;
+	display:block;
+}
+#topMenu a{
+	/*float:left;*/
+	height:32px;
+//	width:153px;
+	width:188px;
+	border-left:1px solid #525252;
+	border-right:1px solid #1F1F1F;
+	font-size:12px;
+	font-weight:bold;
+	line-height:30px;
+	cursor:pointer;
+	display:block;
+}
+#topMenu .topMenu-frst-itm{border-left:none;}
+#topMenu .topMenu-last-itm{border-right:none;}
+#topMenu a:hover{background-position:center bottom;}
+#topMenu li.active a{background-position:center center;}
+#topMenu .sub{background:none;}
+#topMenu .sub li{height:auto; width:162px; float:none; text-align:left}
+#topMenu .sub a{height:auto; line-height:auto; background:#252525 none; text-align:left; padding-left:5px; }
+/******
+LEFT NAVIGATION
+******/
+#leftnav a{
+	border-bottom:1px solid #1F1F1F;
+	color:#FFFFFF;
+	display:block;
+	font-size:13px;
+	font-weight:bold;
+	padding:5px 20px;
+	text-decoration:none;
+	width:160px;	
+	line-height:120%;
+}
+#leftnav ul.subnav{
+	border-color:#1C1C1C #333333 #000000;
+	border-right:1px solid #333333;
+	border-style:solid;
+	border-width:1px;
+	padding:8px 0;		
+}
+#leftnav ul.subnav  li{
+		padding-bottom:5px;
+}
+#leftnav ul.subnav a{
+	border:0 none;
+	font-weight:normal;
+	padding:3px 5px 3px 34px;
+}
+#leftnav ul.subnav a:hover{
+background:  url(../images/smallminus_active.gif) 22px 6px no-repeat;
+}		
+/******
+HEADERS P UL + COLORS/MARGINS?PADDINGS ETC
+******/
+h3{
+	font-size:14px;
+	font-weight:bold;
+}
+
+
+h4, h5, h6{
+	font-size:12px;
+	font-weight:bold;
+}
+dt{font-size:13px;}
+dd{margin-left:30px;}
+sub, sup{font-size: 9px;}
+sup{vertical-align: super;}
+sub{vertical-align: sub; }
+#content-wrapper h3, #content-wrapper h4, #content-wrapper h5, #content-wrapper h6{
+	margin:0 15px 10px 0;
+}
+#content-wrapper .full-width-content-item h4{margin-bottom:5px;}
+#content-wrapper p, #content-wrapper ul, #content-wrapper ol, #content-wrapper dd, #quickLinks{
+	font-size:12px;
+	line-height:1.3em;
+	margin-bottom:10px;
+}
+#content-wrapper h2, #quickLinks h2{
+	color:#2E2E2E;
+	font-size:16px;
+	font-weight:bold;
+	line-height:16px;
+	margin:0 0 10px;
+	padding-bottom:7px;
+}
+#nasaHeader h1, #nasaHeader h2{
+	color:#fff;
+	font-weight:normal;
+}
+#nasaHeader h1{
+	font-size:18px;
+	padding-bottom:5px;
+}
+#nasaHeader h2{
+	font-size:15px;
+}
+#content-wrapper ol, #content-wrapper ul{
+	list-style:disc outside none;
+	margin:0 0 10px 30px;
+	padding-left:5px;
+}
+#content-wrapper .decimal-list{list-style-type:decimal;}
+#content-wrapper .lower-latin-list{list-style-type:lower-latin;}
+#content-wrapper li{padding-bottom:5px;}
+#content-wrapper li ol, #content-wrapper li ol li, #content-wrapper li ul, #content-wrapper li ul li{margin-bottom:0; padding-bottom:0;}
+#content-wrapper li ol, #content-wrapper li ul{margin-top:5px;}
+#tabs li{
+	list-style-type:none;
+	text-align:center;
+	float:right;
+	padding-top:2px;
+}
+.nasafootlinks li {
+	margin-bottom:5px;
+}
+#footerRight li{padding-left:12px;}
+#content-wrapper ul.linklist{
+	margin-left:0px;
+}
+ul.linklist li {
+	list-style-type:none;
+	background:url("../images/linky_blue.gif") no-repeat scroll 0 5px transparent;
+	padding-left:9px;
+	line-height:14px;
+}
+#quickLinks .linklist li{
+	font-size:11px;
+	margin-bottom:5px;
+}
+/******
+Links
+******/
+a{text-decoration:none; color:#004D93}
+a:hover{text-decoration:underline; }
+a:visited {color:#006699;}
+a:link{color:#004D93;}
+#content-wrapper a:link{color:#004D93;}
+#content-wrapper a:hover{ color:#668cc2;}
+#content-wrapper a:visited  {color:#800080;}
+.imageLink, #bannerImg a{
+	display:block;
+	float:left;
+}
+#nasaHeader a, #topMenu li a
+{
+	text-decoration:none;
+	color:#fff;
+}
+#nasaHeader h2 a:hover, #searchbox a:hover{
+	color:#999;
+}
+#tabs a{
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#B2B2B2;
+}
+#tabs a:hover{ text-decoration:underline; color:#fff;}
+#tabs .active a, #tabs .active a:visited, #tabs .active a:link{ color:#fff;}
+.nasafootlinks li, .nasafootlinks li a{
+	color:#B2B2B2;
+	font-size:11px;	
+	line-height: 1.3em;
+}
+/******
+GENERAL CLASSES
+******/
+.hidden {
+	height:0;
+	overflow:hidden;
+	width:0;
+}
+.divClear{
+	clear:both;	
+}
+.flt_left, .img_left{float:left;}
+.flt_right, .img_right{float:right;}
+.flt_none{float:none;}
+.dsply_blck{display:block;}
+.dsply_inln{display:inline;}
+.dsply_none{display:none;}
+
+.listdevider{margin: 0px 5px;}
+
+/* Various text classes */
+
+.fnt_italic{font-style: italic; }
+.fnt_bold{font-weight:bold;}
+.fnt_weight_normal{font-weight:normal;}
+.txt_align_left{text-align:left;}
+.txt_align_right{text-align:right;}
+.txt_align_center{text-align:center;}
+
+/* font size */
+
+.fnt_sz_9{font-size:9px;}
+.fnt_sz_10{font-size:10px;}
+.fnt_sz_11{font-size:11px;}
+.fnt_sz_12{font-size:12px;}
+.fnt_sz_14{font-size:14px;}
+.fnt_sz_18{font-size:18px;}
+
+/* font color*/
+.fnt_gray{color:#7c7c7c;}
+.fnt_color_004D93 {color:#004D93;}
+
+/* text decoration */
+
+.txt_decoration_none{text-decoration:none;}
+.txt_decoration_underline{text-decoration:underline;}
+.txt_decoration_through{text-decoration:line-through;}
+
+/* TABLES */
+ .ver-align-top, .ver-align-top td{vertical-align:top;}
+.tbl-space-collapse,  .datatab{
+	border-collapse:separate;
+	border-spacing:4px;
+}
+table.datatab {
+	border: 1px solid #D9D9D9;
+	margin-bottom:15px;
+	font-size:12px;
+	border-collapse:collapse;
+	}
+table.datatab thead tr th { 
+	background:#99CCFF;
+	font-weight:bold;
+	padding: 3px 8px;
+	border-left: 1px solid #fff;
+}
+
+table.datatab thead tr td { 
+	background:#99CCFF;
+	font-weight:bold;
+	padding: 3px 8px;
+	border-left: 1px solid #fff;
+}
+
+table.datatab tbody tr td {
+	padding: 3px 8px;
+	border-left: 1px solid #D9D9D9;
+	}
+	
+table.datatab tbody tr.odd td {
+	background-color:#edf3fe;
+	}
+	
+
+/******
+CONTENT  CLASSES
+*******/
+/**LISTS WITH THUMBNAILS IMAGES AND TEXT TO THE RIGHT****/
+
+
+.full-width-content-item{ margin-bottom:15px;} /***Div wrapper for all content blocks**/
+
+
+li.thumb-list{
+	float:left;
+	font-size:12px;
+	line-height:130%;
+	list-style-type:none;
+	}
+.thumb-list .list-link-img{display:block;}
+.thumb-list img{
+	width:100px;
+	float:left;
+	padding:0 0 15px;
+}
+.thumb-copy{
+	display:block;
+	margin:0 15px 0 110px;
+	padding:0 0 15px;
+}
+.thumb-header{
+	font-size:1.1em;
+	font-weight:bold;
+	line-height:1.2em;
+}
+.event-date{
+	display:block;
+	font-size:11px;
+	font-weight:bold;
+	margin-bottom:3px;
+	margin-top:3px;
+	}
+	
+/* IMAGES  + CAPTION*/
+
+.img_right{margin: 0 0 10px 10px; }
+.img_left{margin:0 10px 10px 0;}
+.img_right img, .img_left img{display:block;}
+.img_right p, .img_left p{background-color: #D6D6D6;padding: 5px; margin:0;}
+.width_mid{width:240px;}
+.width_wide{width:340px;}
+.img_caption{display:block; font-weight:bold; font-size:14px; line-height: 1.4em;}
+/* img.left {margin:0 7px 5px 0px;}
+img.right {margin:0 15px 5px 7px;}	*/
+/********
+CODE WRITING
+*******/
+pre {
+background:none repeat scroll 0 0 #EEEEEE;
+border:1px solid #999999;
+font-size:0.9em;
+margin:0.5em;
+padding:0.5em;
+overflow:hidden;
+}
+
+
+
+
+
+
+
+

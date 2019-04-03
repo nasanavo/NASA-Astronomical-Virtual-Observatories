@@ -1,0 +1,32 @@
+/* CSS Document - Developed by Mor Vimmer */
+/* COLOR SCHEME - BLUE */
+
+/******
+BACKGROUND IMAGES
+******/
+#page-wrapper{background:url(../images/background/bg-blueDefault.jpg) no-repeat center top;}
+#topMenu a, #topMenu{background:url(../images/top-navbar/blue_bgnav.png) repeat-x scroll center top transparent;}
+#leftnav{background:url(../images/left-navigation/ln_nasa_off.png) repeat left top;}
+
+
+/******
+TOP NAVIGATION
+*****/
+
+#menu li:hover ul.sub li a:hover, #menu ul.sub a.active  {
+	background:#004d93; 
+	color:#fff; 
+	border-color:#000;
+
+	}
+
+/******
+LEFT NAVIGATION
+******/
+ #leftnav a:hover, #leftnav .active{background:  #004d93; }
+#leftnav ul.subnav a.active:hover{	background:#06C url(../images/smallminus_active.gif) 22px 6px no-repeat;}
+
+/******
+headers
+******/
+#content-wrapper h2, #quickLinks h2{border-bottom:2px solid #0B3D91;}

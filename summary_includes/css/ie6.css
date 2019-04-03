@@ -1,0 +1,27 @@
+#page-wrapper{
+	height:400px;		
+}
+#leftnavOneColumn {
+width:708px;
+}
+#rightsidebar{
+	width:218px;
+}
+#tabs li{
+	margin-bottom:-1px;
+}
+#topMenu a{ 
+	width:156px;
+}
+ul.sub{
+	display:block;
+}
+ul.sub li{
+
+	display:block;
+	
+}
+ul.sub a:hover{
+display:block;
+	
+}

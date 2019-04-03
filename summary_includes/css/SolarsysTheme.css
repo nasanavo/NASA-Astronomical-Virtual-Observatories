@@ -1,0 +1,44 @@
+/* CSS Document - Developed by Mor Vimmer */
+/* COLOR SCHEME - SOLAR SYSTEM */
+
+/***
+COLORS:
+#FFA50A- light orange
+#AF3C00 - dark red 
+#C30 - left nav hover
+
+/******
+BACKGROUND IMAGES
+******/
+#page-wrapper{background:url(../images/background/bg-solarsys.jpg) no-repeat center top;}
+#topMenu a, #topMenu{background:url(../images/top-navbar/solarsys_bgnav.png) repeat-x scroll center top transparent;}
+#leftnav{background:url(../images/left-navigation/ln_solarsys_off.png) repeat left top;}
+
+/******
+TOP NAVIGATION
+*****/
+
+#menu li:hover ul.sub li a:hover, #menu ul.sub a.active  {
+	background:#AF3C00; 
+	color:#fff; 
+	border-color:#000;
+
+	}
+
+/******
+LEFT NAVIGATION
+******/
+ #leftnav a:hover, #leftnav .active{background: #AF3C00; }
+#leftnav ul.subnav a.active:hover{	background:#C30 url(../images/smallminus_active.gif) 22px 6px no-repeat;}
+
+/******
+headers
+******/
+#content-wrapper h2, #quickLinks h2{border-bottom:2px solid #AF3C00;}
+
+/*****
+FOOTER
+*****/
+#footer{
+	border-top:8px solid #AF3C00;
+}

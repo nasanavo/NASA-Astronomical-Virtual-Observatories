@@ -1,0 +1,39 @@
+/* CSS Document - Developed by Mor Vimmer */
+/* COLOR SCHEME - BLUE */
+
+/******
+BACKGROUND IMAGES
+******/
+#page-wrapper{background:url(../images/background/bg-tech.jpg) no-repeat center top;}
+#topMenu a, #topMenu{background:url(../images/top-navbar/tech_bgnav.png) repeat-x scroll center top transparent;}
+#leftnav{background:url(../images/left-navigation/ln_tech_off.png) repeat left top;}
+
+
+/******
+TOP NAVIGATION
+*****/
+
+#menu li:hover ul.sub li a:hover, #menu ul.sub a.active  {
+	background:#284a50; 
+	color:#fff; 
+	border-color:#000;
+
+	}
+
+/******
+LEFT NAVIGATION
+******/
+ #leftnav a:hover, #leftnav .active{background:  #284a50; }
+#leftnav ul.subnav a.active:hover{	background:#06C url(../images/smallminus_active.gif) 22px 6px no-repeat;}
+
+/******
+headers
+******/
+#content-wrapper h2, #quickLinks h2{border-bottom:2px solid #122e33;}
+
+/******
+FOOTER
+*****/
+#footer {
+    border-top: 8px solid #122e33;
+}
