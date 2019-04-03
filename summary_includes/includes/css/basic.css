@@ -1,0 +1,63 @@
+/*RESET SECTION */
+#nasaHeader *, #nasaFooter * {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	font-family: Arial,Helvetica,sans-serif;
+}
+#nasaFooter ol, #nasaFooter ul {list-style: none;}
+.divClear {clear: both;}
+.flt_left {float: left;}
+
+/* HEADER */
+
+#nasaHeader {
+    background-color: #2E2E2E;
+    border-bottom: 1px solid #222222;
+    height: 98px;
+    width: 952px;
+	margin: 0 auto;
+}
+#headerTxtWrapper {
+    float: left;
+    left: 15px;
+    padding-top: 30px;
+    position: relative;
+}
+.imageLink {display: block; float: left;}
+#nasaHeader h1 { font-size: 18px;padding-bottom: 5px;}
+#nasaHeader h2 {font-size: 15px;}
+#nasaHeader h1, #nasaHeader h2, #nasaHeader a {
+    color: #FFFFFF;
+    font-weight: normal;
+	 text-decoration: none;
+}
+
+/* FOOTER */
+#nasaFooter {
+    background-color: #2E2E2E;
+    height: 98px;
+    width: 952px;
+	margin: 0 auto;
+}
+#nasaFooter-signature {
+    float: left;
+    padding-left: 20px;
+    padding-top: 19px;
+}
+#nasaFooter .nasafootlinks {
+    float: left;
+    height: 84px;
+    margin-left: 12px;
+    padding-left: 10px;
+    padding-top: 14px;
+    width: 288px;
+}
+#nasaFooter .nasafootlinks li, #nasaFooter  .nasafootlinks li a {color: #B2B2B2;font-size: 11px; line-height: 1.3em; text-decoration:none;}
+#nasaFooter .nasafootlinks li {margin-bottom: 5px;}
+#nasaFooterRight li { padding-left: 12px;}
+#nasaFooterRight li { background: url("../images/rsaquo_gray.gif") no-repeat scroll 0 1px transparent;}

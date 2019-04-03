@@ -1,0 +1,172 @@
+@chasrset "utf-8";
+/* CSS Document */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/******
+BACKGROUND IMAGES
+******/
+
+body{background:url(../images/gsfc_tiled_bg_stars.jpg) repeat left top;}
+#footerRight li{background:url(../images/rsaquo_gray.gif) no-repeat scroll 0 1px transparent;}
+
+#page-wrapper{background:url(../images/bg-astro.jpg) no-repeat center top;}
+
+/******
+BASIC STRUCTURE
+*****/
+
+#page-wrapper{
+	min-height:400px;		
+}
+#page{
+	margin:0 auto;
+	width:952px;	
+	padding-top:8px;
+}
+#nasaHeader{
+	width:952px;
+	background-color:#2e2e2e;
+	border-bottom:1px solid #000000;
+	height:98px;
+  padding: 0px;
+  margin: 0px;
+  line-height:1;
+
+}
+#content{
+	float:left;
+	background-color:#fff;
+}
+#content-wrapper{
+	float:left;	
+}
+.maincontent{
+	background-color:#FFFFFF;
+	float:left;
+	padding: 7px 21px 0 21px;
+}
+/*******
+DIFFERENT WIDTHS for MAIN CONTENT WITH AND WITHOUT RIGHT SIDE AREA
+*******/
+#OneColumn{
+  min-width:910px;
+}
+
+#OneColumn .shim { 
+  width: 910px;
+  height: 0;
+  line-height: 0;
+}
+
+/*******
+GENERAL STYLES / DETAILED STRUCTURE
+*******/
+
+body{
+	color:#000000;
+}
+#page{
+	text-align:left;
+}
+#headerTxtWrapper{
+	left:15px;
+  margin:0px;
+  padding:30px 0px 0px 0px;
+	position:relative;
+	float:left;
+}
+#footer {
+	background-color:#2E2E2E;
+	border-top:8px solid #5F4282;
+	height:98px;
+	width:952px;	
+}
+#footer-signature{
+	padding-left:20px;
+	padding-top:19px;
+	float:left;
+}
+.nasafootlinks{
+	float:left;
+	height:84px;
+	margin-left:70px;
+	padding-left:10px;
+	padding-top:14px;
+	width:190px;
+}
+
+/******
+HEADERS P UL + COLORS/MARGINS?PADDINGS ETC
+******/
+#nasaHeader h1, #nasaHeader h2{
+	color:#fff;
+	font-weight:normal;
+}
+#nasaHeader h1{
+	font-size:18px;
+/***	padding-bottom:1px; ***/
+  padding: 0px 0px 5px 0px;
+  margin:0px;
+}
+#nasaHeader h2{
+	font-size:15px;
+  margin:0px;
+  padding: 0px 0px 3px 0px;
+}
+
+
+#nasaHeader h3{
+	color:#fff;
+	font-weight:normal;
+	font-size:11px;
+  margin:0px;
+  padding: 7px 0px 0px 0px;
+}
+
+
+.nasafootlinks li {
+	margin-bottom:2px;
+}
+#footerRight li{padding-left:12px;}
+/******
+Links
+******/
+.imageLink, #bannerImg a{
+	display:block;
+	float:left;
+}
+#nasaHeader a, #topMenu li a, #siteMenuTop li a, #siteMenuBottom li a
+{
+	text-decoration:none;
+	color:#fff;
+}
+#nasaHeader h2 a:hover {
+	color:#999;
+}
+.nasafootlinks li, .nasafootlinks li a{
+	color:#B2B2B2;
+	font-size:11px;	
+}
+/******
+GENERAL CLASSES
+******/
+.hidden {
+	height:0;
+	overflow:hidden;
+	width:0;
+}
+.divClear{
+	clear:both;	
+}
+.flt_left{float:left;}
+.fnt_bold{font-weight:bold;}
+
+/******
+CONTENT  CLASSES
+*******/
+
+.full-width-content-item{ margin-bottom:15px;} /***Div wrapper for all content blocks**/
